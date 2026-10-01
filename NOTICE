@@ -1,0 +1,30 @@
+FiveM-DLSS5
+Copyright (c) 2026 kerim0x1
+Contact: contact@kerim0x1.com
+
+This project is a client-aware packaging layer and known-good snapshot
+around DLSS5-Feeder. It is not a fork of the feeder source tree.
+
+Upstream
+--------
+DLSS5-Feeder
+  https://github.com/jlrouzies-fr/DLSS5-Feeder
+  MIT License
+  Copyright (c) 2026 Jean-Laurent ROUZIES
+  Portions derived from dlss5-dx11-bridge, Copyright (c) 2026 NIGos (MIT)
+
+The in-process add-on `dlss5-feed.addon64` and `DLSS5_Feed.fx` in
+stack/fivem come from an official Feeder release and remain under that MIT
+license. Keep the upstream copyright on those files.
+
+Not redistributed by the public Git tree
+----------------------------------------
+NVIDIA NGX runtimes (nvngx_dlss.dll, nvngx_dlssnr.dll) — NVIDIA license
+RenoDX DLSS 5 add-on — not an open-source release
+LumeniteFX shaders — AGNYA License (official links only)
+  https://github.com/umar-afzaal/LumeniteFX
+  https://github.com/nvb-uy/AGNYA-License
+ReShade injector — https://reshade.me  (BSD-style; large binary, not published here)
+
+Those files may exist in a local stack\fivem snapshot copied from a working
+FiveM plugins folder. They are listed in .gitignore and must not be pushed.

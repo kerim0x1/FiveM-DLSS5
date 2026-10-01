@@ -1,0 +1,25 @@
+FiveM-DLSS5 — in den plugins-Ordner legen
+=========================================
+
+1. FiveM komplett schließen.
+
+2. DEN INHALT DIESES ARCHIVS hierher kopieren:
+
+   %LOCALAPPDATA%\FiveM\FiveM.app\plugins
+
+   Beispiel:
+   C:\Users\DEINNAME\AppData\Local\FiveM\FiveM.app\plugins
+
+   Win+R  →  %LOCALAPPDATA%\FiveM\FiveM.app\plugins  →  Enter
+
+3. Vorhandene Dateien überschreiben.
+
+4. FiveM starten. Taste Home = Overlay.
+   Lumenite Kernel an, darunter DLSS 5 Feed an.
+   Tasten 1 / 2 / 3 / 4 = Balanced / Quality / High / Ultra.
+
+NICHT neben GTA5.exe in Steam legen.
+NICHT dlss5-feed-helper.addon64 oder host64 dazulegen.
+
+Kontakt: contact@kerim0x1.com
+Upstream: https://github.com/jlrouzies-fr/DLSS5-Feeder

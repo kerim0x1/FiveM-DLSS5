@@ -1,0 +1,22 @@
+{
+  "id": "generic",
+  "name": "Generic 64-bit game",
+  "family": "generic",
+  "detect": {
+    "processes": [],
+    "processGlob": null,
+    "markers": []
+  },
+  "installDir": null,
+  "reshadeFileName": "dxgi.dll",
+  "api": "Auto",
+  "arch": "x64",
+  "helperMode": false,
+  "allowHost64": false,
+  "overlayKey": "Home",
+  "notes": [
+    "Requires -Target pointing at the folder that contains the game executable.",
+    "64-bit D3D12 games must use in-process dlss5-feed.addon64, never the helper.",
+    "This pack does not install the 32-bit helper stack. Use upstream DLSS5-Feeder for 32-bit games."
+  ]
+}

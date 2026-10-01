@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Email
+    url: mailto:contact@kerim0x1.com
+    about: Private contact for this pack
+  - name: DLSS5-Feeder (upstream)
+    url: https://github.com/jlrouzies-fr/DLSS5-Feeder/issues
+    about: Bugs in the feeder add-on itself

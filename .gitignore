@@ -1,0 +1,43 @@
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# editor
+.vscode/
+.idea/
+*.swp
+
+# logs / backups from a live game
+*.log
+*.bak
+**/*.bak-*
+.fivem-dlss5-backup-*/
+
+# local download cache
+.cache/
+downloads/
+
+# packed player zip (NVIDIA runtimes inside — upload as a GitHub Release asset, do not commit)
+release/*.zip
+
+# NVIDIA NGX runtimes — do not publish
+**/nvngx_*.dll
+
+# RenoDX is not an open-source artifact
+**/renodx-dlss5*.addon64
+**/deep-fried-chicken*
+
+# ReShade injector binary
+**/d3d11.dll
+**/dxgi.dll
+**/opengl32.dll
+
+# LumeniteFX is AGNYA: public copies only via the author's official links
+**/lumenite_*.fx
+**/lumenite_*.fxh
+**/lumenite_bluenoise256.png
+
+# helper layout must never ship as the FiveM default
+**/dlss5-feed-helper.addon64
+**/host64/

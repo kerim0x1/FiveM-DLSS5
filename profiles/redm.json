@@ -1,0 +1,24 @@
+{
+  "id": "redm",
+  "name": "RedM",
+  "family": "citizenfx",
+  "detect": {
+    "processes": ["RedM"],
+    "processGlob": "RedM*",
+    "markers": [
+      "%LOCALAPPDATA%\\RedM\\RedM.app\\CitizenFX.ini",
+      "%LOCALAPPDATA%\\RedM\\RedM.exe"
+    ]
+  },
+  "installDir": "%LOCALAPPDATA%\\RedM\\RedM.app\\plugins",
+  "reshadeFileName": "d3d11.dll",
+  "api": "D3D12",
+  "arch": "x64",
+  "helperMode": false,
+  "allowHost64": false,
+  "overlayKey": "Home",
+  "notes": [
+    "Same CitizenFX plugin injection as FiveM.",
+    "ReShade must be named d3d11.dll inside RedM.app\\plugins."
+  ]
+}

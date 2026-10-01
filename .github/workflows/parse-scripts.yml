@@ -1,0 +1,29 @@
+name: parse-scripts
+
+on:
+  push:
+    paths: ['scripts/**', '.github/workflows/parse-scripts.yml']
+  pull_request:
+    paths: ['scripts/**']
+
+jobs:
+  parse:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Parse PowerShell
+        shell: powershell
+        run: |
+          $failed = $false
+          Get-ChildItem -Recurse scripts -Filter *.ps1 | ForEach-Object {
+            $e = $null
+            [void][System.Management.Automation.Language.Parser]::ParseFile($_.FullName, [ref]$null, [ref]$e)
+            if ($e) {
+              $failed = $true
+              Write-Host $_.FullName
+              $e | ForEach-Object { Write-Host $_.ToString() }
+            } else {
+              Write-Host "OK $($_.FullName)"
+            }
+          }
+          if ($failed) { exit 1 }

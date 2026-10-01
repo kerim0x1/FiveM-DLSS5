@@ -1,0 +1,25 @@
+{
+  "id": "fivem",
+  "name": "FiveM",
+  "family": "citizenfx",
+  "detect": {
+    "processes": ["FiveM", "FiveM_b3258_GTAProcess", "FiveM_GTAProcess"],
+    "processGlob": "FiveM*",
+    "markers": [
+      "%LOCALAPPDATA%\\FiveM\\FiveM.app\\CitizenFX.ini",
+      "%LOCALAPPDATA%\\FiveM\\FiveM.exe"
+    ]
+  },
+  "installDir": "%LOCALAPPDATA%\\FiveM\\FiveM.app\\plugins",
+  "reshadeFileName": "d3d11.dll",
+  "api": "D3D12",
+  "arch": "x64",
+  "helperMode": false,
+  "allowHost64": false,
+  "overlayKey": "Home",
+  "notes": [
+    "FiveM injects ReShade from FiveM.app\\plugins as d3d11.dll.",
+    "Never install next to Steam GTA5.exe. FiveM does not load that copy.",
+    "Helper mode is D3D10/11/Vulkan only. FiveM is D3D12, so in-process addon64 is mandatory."
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "altv",
+  "name": "alt:V",
+  "family": "altv",
+  "detect": {
+    "processes": ["altv"],
+    "processGlob": "altv*",
+    "markers": [
+      "%LOCALAPPDATA%\\altv\\altv.exe",
+      "C:\\altv\\altv.exe"
+    ]
+  },
+  "installDir": "%LOCALAPPDATA%\\altv",
+  "installDirFallbacks": [
+    "C:\\altv"
+  ],
+  "reshadeFileName": "dxgi.dll",
+  "api": "D3D11",
+  "arch": "x64",
+  "helperMode": false,
+  "allowHost64": false,
+  "overlayKey": "Home",
+  "notes": [
+    "alt:V commonly loads ReShade as dxgi.dll next to altv.exe.",
+    "Pass -Target if your client is not in the default folder."
+  ]
+}

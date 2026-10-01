@@ -1,0 +1,38 @@
+name: Bug
+description: Something in this pack is wrong
+labels: [bug]
+body:
+  - type: dropdown
+    id: client
+    attributes:
+      label: Client
+      options: [FiveM, RedM, RageMP, alt:V, Generic]
+    validations:
+      required: true
+  - type: input
+    id: path
+    attributes:
+      label: Install path
+      placeholder: C:\Users\...\FiveM.app\plugins
+    validations:
+      required: true
+  - type: input
+    id: gpu
+    attributes:
+      label: GPU and driver
+      placeholder: RTX 5070 Ti  616.56
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Paste dlss5-feed.log + ReShade.log from the plugins folder, not from Steam GTA V.
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+    validations:
+      required: true

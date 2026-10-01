@@ -1,0 +1,27 @@
+{
+  "id": "ragemp",
+  "name": "RageMP",
+  "family": "ragemp",
+  "detect": {
+    "processes": ["ragemp_v", "ragemp_game_ui"],
+    "processGlob": "ragemp*",
+    "markers": [
+      "C:\\RAGEMP\\ragemp_v.exe",
+      "%LOCALAPPDATA%\\RAGEMP\\ragemp_v.exe"
+    ]
+  },
+  "installDir": "C:\\RAGEMP",
+  "installDirFallbacks": [
+    "%LOCALAPPDATA%\\RAGEMP"
+  ],
+  "reshadeFileName": "d3d11.dll",
+  "api": "D3D11",
+  "arch": "x64",
+  "helperMode": false,
+  "allowHost64": false,
+  "overlayKey": "Home",
+  "notes": [
+    "Override with -Target if RageMP lives in a custom folder.",
+    "Prefer in-process dlss5-feed.addon64. Do not drop helper + addon64 together."
+  ]
+}
